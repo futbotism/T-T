@@ -28,4 +28,7 @@ Instruction and deployment:
   npm run start
 ```
 
+---
+### Preview
+
 ![Preview](https://github.com/leolanese/T-T/blob/master/src/assets/Screen%20Shot%202020-02-28%20at%2016.24.59.png)
