@@ -29,7 +29,7 @@ Instruction and deployment:
   npm run start
 ```
 
-```
-<img src="https://photos.app.goo.gl/UFd3JZLE5DXTF5bq9" />
-```
+
+<img src="https://photos.app.goo.gl/UFd3JZLE5DXTF5bq9" alt="result" height="142" width="142">
+
 
