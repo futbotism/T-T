@@ -28,7 +28,7 @@ Instruction and deployment:
   npm run start
 ```
 
-(https://ibb.co/VmqNsFR)[https://ibb.co/VmqNsFR]
+(https://ibb.co/VmqNsFR)[PREVIEW]
 
 
 
