@@ -1,6 +1,5 @@
 # T & T 
 
----
 
 Instruction and deployment:
 
@@ -30,6 +29,6 @@ Instruction and deployment:
 ```
 
 
-<img src="https://photos.app.goo.gl/UFd3JZLE5DXTF5bq9" alt="result" height="142" width="142">
+<img src="https://ibb.co/VmqNsFR" alt="result" height="242" width="242">
 
 
