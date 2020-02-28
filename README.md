@@ -30,6 +30,6 @@ Instruction and deployment:
 ```
 
 ```
-<img src="www.leolanese.com/screenTestByLeo.png" />
+<img src="https://photos.app.goo.gl/UFd3JZLE5DXTF5bq9" />
 ```
 
