@@ -1,4 +1,4 @@
-import {ChangeDetectionStrategy, Component, OnInit, Output} from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, Output } from '@angular/core';
 
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { Observable, Subscribable, Subscription } from 'rxjs';
@@ -13,23 +13,23 @@ import { ApiService } from '../services';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ContainerComponent implements OnInit {
-  httpData$: Object;
+  httpData$: Object; // Object isnt a nice way of typing, perhaps this should describe the data type,
+  // the name 'httpData$' isnt very descriptive, perhaps more specificity
+  // would be more useful? (an app has 100s of httpData types)
   faCoffee = faList;
 
   isHandset$: Observable<boolean> = this.breakpointObserver
     .observe(Breakpoints.Handset)
     .pipe(map(result => result.matches));
 
-  constructor(
-    private breakpointObserver: BreakpointObserver,
-    private apiService: ApiService
-  ) {}
+  constructor(private breakpointObserver: BreakpointObserver, private apiService: ApiService) {}
 
   ngOnInit(): void {
     this.fetchData();
   }
 
   private fetchData() {
+    // this returns an observable but youre assiging it to just an object?
     this.httpData$ = this.apiService.getData('featured-playlists.json');
   }
 }
