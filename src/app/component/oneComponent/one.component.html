@@ -13,6 +13,7 @@
   </mat-toolbar>
 
   <div class="example-container mat-elevation-z8">
+    <!-- would be preferable to see usage of css grid or flex box here, with the template being more symetrical and evenly spaced -->
   <table >
     <thead>
     <tr>
@@ -29,6 +30,7 @@
       <td data-label="Name">{{ item.name }}</td>
       <td data-label="URL">
 
+        <!-- Perhaps consderation for why this should be a separate component? why create a separate component when mat-button would do the trick? -->
         <test-button
           (onClick)="onClickLink($event, item.url)"
           [valueLabelButton]="valueLabelButton">
