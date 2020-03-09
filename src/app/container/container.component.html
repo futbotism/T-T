@@ -20,6 +20,7 @@
 
   </mat-sidenav>
 
+<!-- if you did the httpData$ | async pipe here it would make your life easier in the child component, as you wouldnt need to have any sub subscriptions (full smart/dumb  pattern) -->
   <oneComponent-app
     [httpData$]="httpData$"
   ></oneComponent-app>
