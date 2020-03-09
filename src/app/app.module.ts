@@ -29,12 +29,16 @@ const APP_PROVIDERS = [...APP_RESOLVER_PROVIDERS, ApiService];
 /**
  * Importing Containers & Components
  */
+
+// barrelling and importing all stuff into a module is good, but perhaps it would have been nicer to
+// split things up into angular modules, eg a module for playlists, a module for some other route.
 import { AppComponent } from './app.component';
 
 import { ContainerComponent } from './container';
 
 import { OneComponent } from './component/oneComponent/one.component';
 
+// a sep Router module is the preferrable way to import routes according to angular SG
 const routes: Routes = [
   { path: '', redirectTo: '/LINK1', pathMatch: 'full' },
   { path: 'LINK1', component: OneComponent }
@@ -43,8 +47,9 @@ const routes: Routes = [
 import { ButtonComponent } from './component/button/button.component';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
-import { StoreModule } from '@ngrx/store';
+import { StoreModule } from '@ngrx/store'; // ngrx is imported but not used at all in the application as far as i can see?
 
+// This module file looks overly bloated which is one of the first things i look for in an ng project
 @NgModule({
   declarations: [
     AppComponent,
@@ -69,6 +74,7 @@ import { StoreModule } from '@ngrx/store';
     StoreModule.forRoot({}, {}),
     RouterModule.forRoot(routes, { useHash: true }),
     MatTableModule,
+    // A clean angular project would have been preferabble and probably easier to develop, eg 'ng new playlist-app'
     StoreRouterConnectingModule.forRoot(),
     StoreDevtoolsModule.instrument({
       name: 'Leo Lanese - @ngrx Store DevTools',
