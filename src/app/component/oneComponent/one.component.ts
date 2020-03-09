@@ -10,6 +10,7 @@ import { map } from 'rxjs/operators';
   styleUrls: ['./one.component.css'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
+// FB OneComponent isnt very descriptive to describe the function of this component
 export class OneComponent implements OnInit {
 
   @Input()
